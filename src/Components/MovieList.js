@@ -19,7 +19,9 @@ const MovieList = (props) => {
   .map((movie)=>(<MovieItem movie={movie} key={movie.id}/>))
   return (
     <div>
-      <h2>Watch List</h2>
+      <h2>Watch List : 
+           {WatchList.length}
+      </h2>
       <table>
         <thead>
         <th>
@@ -32,7 +34,9 @@ const MovieList = (props) => {
           </tr>
         </tbody>
       </table>
-      <h2>Watched</h2>
+      <h2>Watched : 
+         {WatchedList.length}
+      </h2>
       <table>
         <thead>
         <th>
